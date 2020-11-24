@@ -12,7 +12,8 @@ __main  FUNCTION
 		VLDR.F32 s21,= 1; time
 		VLDR.F32 s24, =.01
 		VLDR.F32 s31, =1000
-		
+		;x = (a+bt)*cos(t)
+		;y = (a+bt)*sin(t)
 		MOV r4,#1;
 		MOV r5,#1572; 5*pi times
 		
