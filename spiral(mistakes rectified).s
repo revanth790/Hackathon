@@ -1,4 +1,3 @@
-     THUMB
 	 AREA     test, CODE, READONLY
      EXPORT __main  
 	 IMPORT printMsg2p
@@ -18,7 +17,7 @@ __main  FUNCTION
 		;y = (a+bt)*cos(t)
 		VLDR.F32 s30, =57.32
 		VLDR.F32 s29, = 3.14
-        
+;For 1st spiral        
 		MOV r6,#1
 		MOV r7,#5
 
@@ -58,7 +57,7 @@ loop2   VDIV.F32 s0,s25,s30
 		CMP r6,r7
 		ADD r6,#1
 		BLT loop3      
-		
+;For 2nd spiral 		
 		VLDR.F32 s20,=0.03;a
 		VLDR.F32 s22, =0.03;b
         VLDR.F32 s25,= 1800;
